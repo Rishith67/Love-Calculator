@@ -14,14 +14,19 @@ function getSimilarityPercentage(value1, value2) {
 }
 const btn = document.getElementById("myButton");
 btn.addEventListener("click", function () {
-     
+    
     const a = document.getElementById("boy").value;
     const b = document.getElementById("girl").value;
+    if(a === "Rishith"){
+        document.getElementById("ans").textContent = "Rishith is single forever";
+    }
+    else{
     const c = getAsciiSum(a);
     const d = getAsciiSum(b);
     const ans = getSimilarityPercentage(c,d);
     document.getElementById("ans").textContent = "The percentage of " + " " + a + " and " + b 
     + " is " + ans+ "%";
+    }
 
 
 });
