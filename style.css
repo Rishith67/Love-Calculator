@@ -1,0 +1,28 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --btn-bg: black;
+    --btn-text: white;
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: aliceblue;
+    --btn-bg: white;
+    --btn-text: black;
+}
+button {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
