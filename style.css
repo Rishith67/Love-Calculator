@@ -12,6 +12,13 @@
     --btn-bg: white;
     --btn-text: black;
 }
+.valentine-mode{
+    background-color: pink;
+    color:aliceblue;
+    --btn-bg:white;
+    --btn-text:red;
+    
+}
 button {
     background-color: var(--btn-bg);
     color: var(--btn-text);

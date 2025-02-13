@@ -17,8 +17,12 @@ btn.addEventListener("click", function () {
     
     const a = document.getElementById("boy").value;
     const b = document.getElementById("girl").value;
-    if(a === "Rishith"){
-        document.getElementById("ans").textContent = "Rishith is single forever";
+    if(a === "Rishith" || a==="Manohar" || a==="Vanga" || a === "Vanga Rishith Reddy"){
+        document.getElementById("ans").textContent = a+ " is single forever";
+    }
+    if(a === "arjun " || a === "Arjun "){
+        document.getElementById("ans").textContent = "The percentage of " + " " + a + " and " + b 
+    + " is " +  "100%";
     }
     else{
     const c = getAsciiSum(a);
@@ -31,5 +35,10 @@ btn.addEventListener("click", function () {
 
 });
 document.getElementById("darkModeToggle").addEventListener("click", function(){
+    document.body.classList.remove("valentine-mode");
     document.body.classList.toggle("dark-mode");
+});
+document.getElementById("ValentineMode").addEventListener("click",function(){
+    document.body.classList.remove("dark-mode");
+    document.body.classList.toggle("valentine-mode");
 });
